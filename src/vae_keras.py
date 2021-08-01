@@ -90,4 +90,4 @@ pred = vae_model.predict(sample_imgs)[..., 0]
 # encoder_model.evaluate(x=train_xs)
 
 vae_model.compile('adam', loss=vae_loss)
-vae_model.fit(x=train_xs)
+vae_model.train(x=train_xs)
